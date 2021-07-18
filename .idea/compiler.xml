@@ -8,13 +8,26 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="distributed-lock" />
+        <module name="leader-select-demo" />
+        <module name="user-center" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="product-center" target="1.5" />
+      <module name="product-center (1)" target="1.5" />
+      <module name="product-center (2)" target="1.5" />
+      <module name="user-center" target="1.5" />
+      <module name="zookeeper-register-center" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="distributed-lock" options="-parameters" />
+      <module name="leader-select-demo" options="-parameters" />
+      <module name="product-center (2)" options="-parameters" />
+      <module name="user-center" options="-parameters" />
       <module name="zk-test" options="-parameters" />
+      <module name="zookeeper-register-center" options="" />
     </option>
   </component>
 </project>
